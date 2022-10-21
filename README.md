@@ -1,2 +1,3 @@
 # new
-frees cli while running gui and cli apps
+sudo g++ new -o /usr/bin/new
+
