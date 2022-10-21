@@ -1,3 +1,6 @@
 # new
-sudo g++ new -o /usr/bin/new
+
+### install
+> cd new
+> sudo g++ new.cpp -o /usr/bin/new
 
