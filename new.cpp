@@ -16,7 +16,7 @@ int main(int argc, char** argv){
         command+=(std::string)argv[i]+" ";
     }
     std::thread thread = std::thread([=](){
-        popen((command+/*stops stdout*/" 2>/dev/null").c_str(),"w"); // executes cmd
+        popen((command+/*stops stdout*/" 2>/dev/null>/dev/null").c_str(),"w"); // executes cmd
         pclose(stdout);
     });
     thread.join();
